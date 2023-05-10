@@ -1,0 +1,18 @@
+@import '~bootstrap/scss/bootstrap';
+
+header{
+    height: 170px;
+    
+    ul{
+        padding: 10px 20px;
+
+        .nav-links{
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+
