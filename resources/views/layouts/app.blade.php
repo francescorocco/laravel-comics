@@ -11,10 +11,10 @@
     
     @include('partials.header')
 
+    @include('partials.jumbotron')
+
     <main>
-        <div class="container">
-            @yield('content')
-        </div>
+        @yield('content')
     </main>
 
     @include('partials.footer')

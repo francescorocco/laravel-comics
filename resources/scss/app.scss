@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 header{
     height: 170px;
     
@@ -15,4 +19,57 @@ header{
     }
 }
 
+.hero{
+    background-image: url(../img/jumbotron.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+main{
+    background-color: black;
+}
+
+
+.ms_container{
+        flex-wrap: wrap;
+        padding: 50px 0 150px 0;
+        position: relative;
+
+        .card-wrapper{
+            width: calc(100% / 6 - 5px);
+            margin: 30px 0;
+        }
+}
+
+button {
+    background-color: rgb(2, 130, 249);
+    border: none;
+    padding: 10px 39px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.btn-current-series{
+    position: absolute;
+    left: -1%;
+    top: -4%;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.ms_card{
+    width: 200px;
+    height: 300px;
+
+    h3{
+        color:white;
+        text-align: center;
+    }
+
+    img{
+        width: 200px;
+        height: 300px;
+    }
+}
