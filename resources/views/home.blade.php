@@ -13,10 +13,10 @@
             <div class="card-wrapper">
                 <div class="ms_card">
                     <div class="image-wrapper">
-                      <img src="{{$product['thumb']}}" :alt="name">
+                        <img src="{{$product['thumb']}}" :alt="name">
                     </div>
-                    <h3>{{$product['series']}}</h3>
-                  </div>
+                    <h5>{{$product['series']}}</h5>
+                </div>
             </div>
             
         @endforeach
@@ -26,7 +26,22 @@
     
     </div>
 
-
+    <div class="info-wrapper">
+        <div class="container">
+            <ul class="d-flex list-unstyled justify-content-between">
+                @foreach ($informations as $info)
+                <li>
+                    <div class="d-flex align-items-center">
+                        <div class="image-wrapper">
+                            <img src="{{ Vite::asset($info['image']) }}"/>
+                        </div>
+                        <div class="text-information">{{$info['name']}}</div>
+                    </div>
+                </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
 
 
 @endsection

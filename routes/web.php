@@ -15,7 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $products =config('comics');
+    $products =config('comics.comics');
+    $informations = config('comics.informationList');
+    $footerLinks = config('footer_links.foorterLiks');
+    $footerImages = config('footer_links.followUsLinks');
 
-    return view('home', compact('products'));
+    $data =[
+        'products' =>$products,
+        'informations' => $informations,
+        'footerLinks' =>$footerLinks,
+        'footerImages' => $footerImages
+    ];
+    
+
+    return view('home', $data);
 })->name('home');

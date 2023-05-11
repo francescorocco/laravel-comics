@@ -28,6 +28,15 @@ header{
 
 main{
     background-color: black;
+
+    button {
+    background-color: rgb(2, 130, 249);
+    border: none;
+    padding: 10px 39px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+}
 }
 
 
@@ -37,19 +46,12 @@ main{
         position: relative;
 
         .card-wrapper{
-            width: calc(100% / 6 - 5px);
+            width: calc(100% / 6);
             margin: 30px 0;
         }
 }
 
-button {
-    background-color: rgb(2, 130, 249);
-    border: none;
-    padding: 10px 39px;
-    font-size: 18px;
-    color: white;
-    margin-bottom: 30px;
-}
+
 
 .btn-current-series{
     position: absolute;
@@ -59,11 +61,15 @@ button {
     font-weight: 800;
 }
 
+.btn-leade-more {
+    margin-top: 200px;
+}
+
 .ms_card{
     width: 200px;
     height: 300px;
 
-    h3{
+    h5{
         color:white;
         text-align: center;
     }
@@ -71,5 +77,92 @@ button {
     img{
         width: 200px;
         height: 300px;
+    }
+}
+
+.info-wrapper{
+    background-color: rgb(2, 130, 249);
+    padding: 60px 0;
+
+    .image-wrapper{
+        height: 50px;
+    
+        img{
+            object-fit: contain;
+            height: 100% ;
+        }
+    }
+
+    & li:last-child .elements-wrapper img{
+        height: 40px;
+    }
+
+    .text-information{
+        color: white;
+        padding-left: 15px;
+    }
+}
+
+
+
+footer{
+    background-image: url(../img/footer-bg.jpg);
+    height: 400px;
+    background-size: cover;
+
+    .ms_container{
+        height: 400px;
+        overflow-y: hidden;
+    }
+
+    .links-wrapper{
+
+        height: 400px;
+        
+        .list-name{
+            color: white;
+            padding: 0 55px 35px 0;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        ul{
+            
+            .links{
+                text-decoration: none;
+                color:gray;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .img-wrapper{
+        overflow-y: hidden;
+        
+        img{
+            transform: translateY(-15%);
+        }
+    }
+
+    .bottom-footer{
+        height: 100px;
+        width: 100%;
+        background-color: rgb(48, 48, 48);
+        
+        .sign-up{
+            background-color: transparent;
+            padding: 12px 18px;
+            border: 3px solid rgb(2, 130, 249);
+            color: white;
+            font-size: 18px;
+        }
+
+        li{
+            padding:10px;
+        }
+        .follow-text{
+            color: rgb(2, 130, 249);
+            font-size: 20px;
+            font-weight: 600;
+        }
     }
 }
